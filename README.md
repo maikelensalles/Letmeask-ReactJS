@@ -1,10 +1,6 @@
-<p align="center">
-  <img alt="Letmeask" src=".github/logo.svg" width="160px">
-</p>
+## 💻 Projeto
 
-<h1 align="center">
-    <img alt="Letmeask" src=".github/cover.svg" />
-</h1>
+Letmeask é perfeito para criadores de conteúdos poderem criar salas de Q&A com o seu público, de uma forma muito organizada e democrática. 
 
 <br>
 
@@ -36,10 +32,5 @@ $ yarn start
 O app estará disponível no seu browser pelo endereço http://localhost:3000.
 
 Lembrando que será necessário criar uma conta no [Firebase](https://firebase.google.com/) e um projeto para disponibilizar um Realtime Database.
-
-## 💻 Projeto
-
-Letmeask é perfeito para criadores de conteúdos poderem criar salas de Q&A com o seu público, de uma forma muito organizada e democrática. 
-
 
 By [Maikelen Salles](https://maikelensalles.site)
