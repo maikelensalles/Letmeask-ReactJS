@@ -1,8 +1,13 @@
+
+<h1 align="center">
+    <img alt="Letmeask" src="https://github.com/rocketseat-education/nlw-06-reactjs/raw/master/.github/logo.svg" />
+</h1>
+
+<br>
+
 ## 💻 Projeto
 
 Letmeask é perfeito para criadores de conteúdos poderem criar salas de Q&A com o seu público, de uma forma muito organizada e democrática. 
-
-<br>
 
 ## 🧪 Tecnologias
 
