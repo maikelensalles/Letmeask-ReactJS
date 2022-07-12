@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Letmeask" src="https://github.com/rocketseat-education/nlw-06-reactjs/raw/master/.github/logo.svg" />
+    <img alt="Letmeask" src="https://raw.githubusercontent.com/maikelensalles/Letmeask-ReactJS/main/src/assets/images/logo.svg" />
 </h1>
 
 ## 💻 Projeto
