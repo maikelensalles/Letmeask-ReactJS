@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { ref, set } from 'firebase/database';
+import { FormEvent, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
 import logoImg from '../assets/images/logo.svg';
@@ -20,7 +21,9 @@ export function Room() {
     const [newQuestion, setNewQuestion] = useState('');
     const roomId = params.id;
     
-    async function handleSendQuestion() {
+    async function handleSendQuestion(event: FormEvent) {
+        event.preventDefault();
+
         if (newQuestion.trim() === '') {
             return;
         }
@@ -39,7 +42,7 @@ export function Room() {
             isAnswered: false
         };
 
-        await getDatabase().ref(`/rooms/${roomId}/questions`).push(question);
+        await set(ref(getDatabase(), `rooms/${roomId}/questions`), (question));
 
     }
 
@@ -57,7 +60,7 @@ export function Room() {
                     <span>4 perguntas</span>
                 </div>
 
-                <form>
+                <form onSubmit={handleSendQuestion}>
                     <textarea
                     placeholder="O que você que perguntar?"
                     onChange={event => setNewQuestion(event.target.value)}
@@ -66,14 +69,10 @@ export function Room() {
 
                     <div className="form-footer">
                         <span>Para enviar uma pergunta, <button>faça seu login</button>.</span>
-                        <Button type="submit">Enviar Pergunta</Button>
+                        <Button type="submit" disabled={!user}>Enviar Pergunta</Button>
                     </div>
                 </form>
             </main>
         </div>
     );
-}
-
-function ref(getDatabase: (app?: import("@firebase/app").FirebaseApp | undefined, url?: string | undefined) => import("@firebase/database").Database, arg1: number, arg2: { roomId: string | undefined; }) {
-    throw new Error('Function not implemented.');
 }
