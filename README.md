@@ -9,7 +9,7 @@
 
 ## 💻 Projeto
 
-Letmeask é perfeito para criadores de conteúdos poderem criar salas de Q&A com o seu público, de uma forma muito organizada e democrática. 
+[Letmeask](https://letmeask-4ccc2.web.app/) é perfeito para criadores de conteúdos poderem criar salas de Q&A com o seu público, de uma forma muito organizada e democrática. 
 
 ## 🧪 Tecnologias
 
