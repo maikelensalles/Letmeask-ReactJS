@@ -2,11 +2,6 @@
     <img alt="Letmeask" src="https://raw.githubusercontent.com/maikelensalles/Letmeask-ReactJS/main/src/assets/images/logo.svg" />
 </h1>
 
-<h1 align="center">
-    <img alt="Letmeask" src="https://raw.githubusercontent.com/maikelensalles/Letmeask-ReactJS/main/src/assets/images/cover.svg" />
-</h1>
-
-
 ## 💻 Projeto
 
 [Letmeask](https://letmeask-4ccc2.web.app/) é perfeito para criadores de conteúdos poderem criar salas de Q&A com o seu público, de uma forma muito organizada e democrática. 
