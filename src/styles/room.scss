@@ -80,3 +80,35 @@
         
     }
 }
+
+$tablet: "only screen and (max-width : 800px)";
+
+@media #{$tablet} {
+  #page-room {
+    margin: 0px 87px auto;
+  }
+}
+
+$responsive: "only screen and (max-width : 600px)";
+
+@media #{$responsive} {
+  #page-room, header, .content {
+    flex-direction: column;
+  }
+}
+
+$celular: "only screen and (max-width : 400px)";
+
+@media #{$celular} {
+   #page-room {
+    margin: 0px 48px auto;
+
+    main, form, .form-footer {
+        flex-direction: column;
+    }
+    
+    button {
+        margin: 10px;
+    }
+   }
+}
