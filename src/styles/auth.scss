@@ -1,10 +1,11 @@
 #page-auth {
+  max-width: 100%;
   display: flex;
   align-items: stretch;
   height: 100vh;
 
   aside {
-    flex: 7;
+    flex: 1;
 
     background: #835afd;
     color: #fff;
@@ -34,7 +35,7 @@
   }
 
   main {
-    flex: 8;
+    flex: 2;
     padding: 0 32px;
 
     display: flex;
@@ -138,5 +139,39 @@
       background: #a8a8b3;
       margin-left: 16px;
     }
+  }
+}
+
+$tablet: "only screen and (max-width : 800px)";
+
+@media #{$tablet} {
+  #page-auth {
+      flex-direction: column;
+      
+      aside {
+        padding: 28px 80px;
+        border-radius: 0 0 140px 140px;
+
+        img {
+          max-width: 27%;
+          align-self: center;
+        }
+
+        strong, p {
+          text-align: center;
+        }
+      }
+  }
+}
+
+$responsive: "only screen and (max-width : 700px)";
+
+@media #{$responsive} {
+  #page-auth aside strong {
+    font-size: 30px;
+  }
+
+  #page-auth aside p {
+    font-size: 18px;
   }
 }
