@@ -107,7 +107,7 @@
 
     transition: filter 0.2s;
 
-    img {
+    .google {
       margin-right: 8px;
     }
 
@@ -171,7 +171,45 @@ $responsive: "only screen and (max-width : 700px)";
     font-size: 30px;
   }
 
+  #page-auth aside img {
+    max-width: 27%;
+    align-self: center;
+  }
+  
   #page-auth aside p {
     font-size: 18px;
+  }
+}
+
+$iphone8: "only screen and (max-width : 600px)";
+
+@media #{$iphone8} {
+  #page-auth aside strong {
+    font-size: 28px;
+  }
+
+  #page-auth aside {
+    padding: 17px 80px;
+  }
+
+  #page-auth aside img {
+    max-width: 60px;
+  }
+
+  .main-content img {
+    max-width: 42%;
+    
+  }
+
+  #page-auth .create-room {
+    margin-top: 7px;
+  }
+
+  #page-auth  main {
+    padding: 15px 32px;
+  }
+
+  #page-auth .main-content h2 {
+    margin: 10px 0 23px;
   }
 }
