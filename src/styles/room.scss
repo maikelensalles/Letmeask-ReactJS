@@ -95,7 +95,18 @@ $responsive: "only screen and (max-width : 600px)";
   #page-room, header, .content {
     flex-direction: column;
   }
+
+  .content, img {
+    max-width: 35%;
+    margin-bottom: 15px;
+  }
+
+  .google {
+    margin-bottom: 0;
+  }
 }
+
+
 
 $celular: "only screen and (max-width : 400px)";
 
@@ -107,7 +118,7 @@ $celular: "only screen and (max-width : 400px)";
         flex-direction: column;
     }
     
-    button {
+    .button {
         margin: 10px;
     }
    }
