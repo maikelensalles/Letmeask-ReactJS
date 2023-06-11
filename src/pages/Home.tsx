@@ -38,7 +38,7 @@ export function Home() {
     const roomRef = await get(ref(database, `/rooms/${roomCode}`));
 
     if (!roomRef.exists()) {
-      alert('Room does not exists.');
+      alert('A sala não existe.');
       return;
     }
 
@@ -56,7 +56,7 @@ export function Home() {
         <div className="main-content">
           <img src={logoImg} alt="Letmeask" />
           <button onClick={handleCreateRoom} className="create-room">
-            <img src={googleIconImg} alt="Logo do Google" />
+            <img src={googleIconImg} alt="Logo do Google" className='google' />
             Crie sua sala com o Google
           </button>  
           <div className="separator">ou entre em uma sala</div>
